@@ -2,15 +2,14 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        BmiService bmiService = new BmiService();
+        BmiService service = new BmiService();
 
-        int weight = 100; // Вес в килограммах
+        int weightKg = 77;
 
-        int height = 2; // Рост в метрах
+        double heightM = 1.86;
 
-        int bmi = bmiService.calculate(weight, height);
+        int bmi = service.calculate(weightKg, heightM);
 
-        System.out.println("BMI индекс: " + bmi);
-
-    }
+        System.out.println("BMI индекс: " + bmi );
+}
 }
